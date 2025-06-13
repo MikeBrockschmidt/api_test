@@ -7,7 +7,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key}); // empfohlener 'key'-Parameter
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.deepPurple,
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.deepPurple,
-          foregroundColor: Colors.white, // weiße Schrift & Icons
+          foregroundColor: Colors.white,
         ),
       ),
       home: const IpInfoPage(),
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
 }
 
 class IpInfoPage extends StatefulWidget {
-  const IpInfoPage({super.key}); // empfohlener 'key'-Parameter
+  const IpInfoPage({super.key});
 
   @override
   State<IpInfoPage> createState() => _IpInfoPageState();
@@ -69,7 +69,7 @@ class _IpInfoPageState extends State<IpInfoPage> {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start, // korrekte Position
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Center(
               child: ElevatedButton(
